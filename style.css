@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #121212;
+}
+h1 {
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(90deg, rgb(255, 0, 166), rgb(0, 38, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+}
+h1:hover {
+    text-shadow: 1px 1px 1px rgba(221, 0, 255, 0.7), 0 0 20px rgba(30, 144, 255, 0.7);
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: .2rem .2rem 1rem #cc00ff61;
+    font-size: 16vmin;
+    color: #1E90FF;
+    background-color: #fff;
+}
+#resetbtn, #new_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px auto;
+    padding: 1rem;
+    font-size: 1.25rem;
+    background: linear-gradient(90deg, rgb(255, 0, 255), rgb(0, 68, 255));
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    transition: all .2s ease-in;
+}
+#resetbtn:hover, #new_btn:hover {
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+#msg {
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(90deg, rgb(255, 0, 55), rgb(0, 106, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hide {
+    display: none;
+    visibility: hidden;
+}
+.message_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(18, 18, 18, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+    color: white;
+    font-size: 2rem;
+}
